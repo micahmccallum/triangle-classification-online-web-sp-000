@@ -4,6 +4,7 @@ class Triangle
 
   def initialize(side_a, side_b, side_c)
     @sides = [side_a, side_b, side_c]
+    @sides.sort!
     binding.pry
   end
 
@@ -40,7 +41,6 @@ class Triangle
   end
 
   def is_valid?
-
     (@sides > 0 && @sides > 0 && @sides > 0) &&
     ((@sides + @sides) > @sides)
   end
