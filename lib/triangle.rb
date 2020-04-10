@@ -9,10 +9,11 @@ class Triangle
 
   def kind
     if !self.is_valid?
-      raise TriangleError
+      begin
+        raise TriangleError
       rescue TriangleError => error
-      puts error.message
-
+          puts error.message
+      end
     elsif self.is_equilateral?
       :equilateral
     elsif self.is_isosceles?
