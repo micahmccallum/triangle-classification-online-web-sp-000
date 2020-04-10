@@ -36,7 +36,7 @@ class Triangle
   end
 
   def is_scalene?
-    @sides != @sides && @sides != @sides && @sides != @sides
+    @sides[0] != @sides[1] && @sides[1] != @sides[2] && @sides[2] != @sides[0]
   end
 
   def is_valid?
