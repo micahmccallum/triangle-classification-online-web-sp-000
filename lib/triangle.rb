@@ -43,3 +43,6 @@ class Triangle
   class TriangleError < StandardError
   end
 end
+
+tri = Triangle.new(0, 1, 3)
+tri.kind
