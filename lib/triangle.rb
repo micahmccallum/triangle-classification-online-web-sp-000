@@ -8,15 +8,13 @@ class Triangle
   end
 
   def kind
-    if !self.is_valid?
-      binding.pry
-      # begin
+    if !self.is_valid?      
+      begin
         raise TriangleError
-      # rescue TriangleError => error
-      #   puts error.message
-      # end
-    end
-    if self.is_equilateral?
+      rescue TriangleError => error
+        puts error.message
+      end
+    elsif self.is_equilateral?
       :equilateral
     elsif self.is_isosceles?
       :isosceles
