@@ -10,6 +10,7 @@ class Triangle
 
   def kind
     if !self.is_valid?
+      binding.pry
       begin
         raise TriangleError
       rescue TriangleError => error
