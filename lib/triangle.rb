@@ -25,7 +25,7 @@ class Triangle
   end
 
   def is_equilateral?
-    @side_a == @side_b && @side_b == @side_c
+    @sides[0] == @sides[1] && @sides[1] == @sides[2]
   end
 
   def is_isosceles?
