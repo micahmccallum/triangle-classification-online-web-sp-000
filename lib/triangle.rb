@@ -4,8 +4,7 @@ class Triangle
 
   def initialize(side_a, side_b, side_c)
     @sides = [side_a, side_b, side_c]
-    @sides.sort!
-    binding.pry
+    @sides.sort!    
   end
 
   def kind
@@ -27,17 +26,16 @@ class Triangle
   end
 
   def is_equilateral?
-    @sides[0] == @sides[1] && @sides[1] == @sides[2]
+    @sides[0] == @sides[2]
   end
 
   def is_isosceles?
     (@sides[0] == @sides[1] && @sides[1] != @sides[2]) ||
-    (@sides[1] == @sides[2] && @sides[2] != @sides[0]) ||
-    (@sides[2] == @sides[0] && @sides[0] != @sides[1])
+    (@sides[1] == @sides[2] && @sides[1] != @sides[0])
   end
 
   def is_scalene?
-    @sides[0] != @sides[1] && @sides[1] != @sides[2] && @sides[2] != @sides[0]
+    @sides[0] != @sides[1] && @sides[1] != @sides[2]
   end
 
   def is_valid?
