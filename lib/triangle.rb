@@ -39,8 +39,7 @@ class Triangle
   end
 
   def is_valid?
-    (@sides > 0 && @sides > 0 && @sides > 0) &&
-    ((@sides + @sides) > @sides)
+  (@sides[0] > 0) && ((@sides[0] + @sides[1]) > @sides[2])
   end
 
   class TriangleError < StandardError
