@@ -6,7 +6,7 @@ class Triangle
     @sides = []
     @sides << attributes
     binding.pry
-  
+
     # @side_a = side_a
     # @side_b = side_b
     # @side_c = side_c
