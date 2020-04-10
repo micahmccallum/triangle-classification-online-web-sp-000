@@ -10,12 +10,12 @@ class Triangle
 
   def kind
     if !self.is_valid?
-      binding.pry
-      begin
+      # binding.pry
+      # begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      # rescue TriangleError => error
+      #   puts error.message
+      # end
     end
     if self.is_equilateral?
       :equilateral
