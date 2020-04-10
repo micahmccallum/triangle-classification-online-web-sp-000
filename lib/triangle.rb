@@ -12,7 +12,7 @@ class Triangle
       raise TriangleError
       rescue TriangleError => error
       puts error.message
-      
+
     elsif self.is_equilateral?
       :equilateral
     elsif self.is_isosceles?
