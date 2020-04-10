@@ -40,5 +40,4 @@ class Triangle
   end
 end
 
-tri = Triangle.new(0, 1, 3)
-tri.kind
+
